@@ -1,0 +1,510 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: mediumturquoise;
+}
+
+button:hover{
+    background-color: orangered;
+}
+
+buttonW{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px cadetblue;
+    color: white;
+    background-color: green;
+}
+
+buttonW:hover{
+    background-color: orangered;
+}
+
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:orangered; }
+
+header{
+    background-color: rgb(229, 229, 229);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 10px 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: orangered;
+}
+
+#Presentacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imgs/Inicio.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Presentacion h1{
+    color: white;
+}
+
+#Presentacion button{
+    font-size: 1.75em;
+}
+#Presentacion buttonW{
+    font-size: 1.75em;
+}
+
+#Inicio .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+#Servicios{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#Servicios .container{
+    padding: 150px 12px;
+}
+
+#Servicios h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#Servicios p{
+    display: none;
+}
+
+#Servicios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imgs/Carpinteria.jpeg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imgs/Cerrajeria.jpeg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imgs/plomeria.jpeg");
+
+}
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imgs/electrividad.jpeg");
+
+}
+
+
+#Productos{
+    background-color: rgb(124, 122, 122);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#Productos .container{
+    padding: 150px 12px;
+}
+
+#Productos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#Productos p{
+    display: none;
+}
+
+#Productos .cartaP{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.cartaP:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imgs/CespedS.jpeg");
+
+}
+
+.cartaP:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imgs/Piso.jpeg");
+}
+
+.cartaP:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imgs/gypsum.png");
+
+}
+.cartaP:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imgs/pvc3d.jpeg");
+
+}
+
+
+footer{
+    background-color:rgb(229, 229, 229);
+    
+}
+
+footer p{
+    margin:0;
+    padding: 20px;
+    color: black;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #Presentacion h1{
+        font-size: 5em;
+    }
+
+    #Inicio .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #Inicio .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #Inicio h2{
+        margin-top: 0px;
+    }
+
+    #Inicio .img-container{
+        background-image: url("Imgs/logomj.png");
+        background-size: cover;
+        background-position: center center;
+        height: 350px;
+        width: 500px; 
+    }
+
+    #Servicios .tpt{
+        display: flex;
+        justify-content: center;
+    }
+
+    #Servicios p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #Servicios h2{
+        font-size: 4em;
+    }
+
+    #Servicios h3{
+        margin-top: 0;
+    }
+
+    #Servicios .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(130, 127, 127);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("Imgs/Carpinteria.jpeg");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("Imgs/Cerrajeria.jpeg");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("Imgs/plomeria.jpeg");
+
+    }
+    .carta:nth-child(4){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("Imgs/electrividad.jpeg");
+
+    }
+   
+    #Productos .tpt2{
+        display: flex;
+        justify-content: center;
+    }
+
+    #Productos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #Productos h2{
+        font-size: 4em;
+    }
+
+    #Productos h3{
+        margin-top: 0;
+    }
+
+    #Productos .cartaP{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: black;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .cartaP:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("Imgs/CespedS.jpeg");
+
+    }
+
+    .cartaP:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("Imgs/Piso.jpeg");
+    }
+
+    .cartaP:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("Imgs/pvc3d.jpeg");
+
+    }
+    .cartaP:nth-child(4){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("Imgs/gypsum.png");
+
+    }
+
+    footer .container{
+        justify-content: center;
+    }
+}
+
+
+
+form * {
+	font-family: var(--fuente);
+}
+
+form .input {
+	padding: 10px 15px;
+	border-radius: 3px;
+	border: 1px solid #d6d6d6;
+	transition: .3s ease all;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+form .input:focus {
+	border: 1px solid #641ee7;
+	outline: none;
+}
+
+.boton {
+	background: #641ee7;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 15px;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 22px;
+	transition: .3s ease all;
+}
+
+.boton:hover {
+	background: #5114c2;
+}
+
+.boton.verde {
+	background: #00a04a;
+}
+
+.boton.verde:hover {
+	background: #00833d;
+}
